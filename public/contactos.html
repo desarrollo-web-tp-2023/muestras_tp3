@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactos - Pizzería</title>
+    <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Custom styles for this page */
+        .social-icons a {
+            font-size: 2em; /* Agrandar el tamaño de la fuente */
+            margin-right: 20px;
+            color: #25D366; /* Color de WhatsApp */
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #128C7E; /* Color verde más oscuro para el hover */
+        }
+
+        .social-icons2 a {
+            font-size: 2em; /* Agrandar el tamaño de la fuente */
+            margin-right: 20px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons2 a:hover {
+            color: #333; /* Cambiar a color gris oscuro en hover */
+        }
+
+        h2, h4, h5, p {
+            color: #fff; /* Asegurar que todos los textos sean blancos para buen contraste */
+        }
+
+        h2 {
+            font-size: 2.5em; /* Agrandar el tamaño del título */
+            font-family: 'Righteous', sans-serif;
+        }
+
+        h4 {
+            font-size: 1.8em; /* Agrandar subtítulos */
+        }
+
+        h5 {
+            font-size: 1.5em; /* Agrandar sub-subtítulos */
+        }
+
+        p {
+            font-size: 1.2em; /* Agrandar el texto de párrafos */
+        }
+
+        .footer {
+            background-color: #ed8125 !important; /* Colores de fondo para la sección de footer */
+            color: #fff; /* Color blanco para el texto en el pie */
+        }
+
+        .footer-logo a {
+            font-size: 1.6em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-logo a:hover {
+            color: #ed8125; /* Cambiar color de los enlaces en el pie */
+        }
+
+        .social-icons2 a {
+            font-size: 1.8em;
+            color: #fff;
+        }
+
+        .social-icons2 a:hover {
+            color: #ed8125; /* Hover en el pie para un toque dinámico */
+        }
+
+        /* Mapa de Google */
+        #map {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #ed8125; /* Agregar borde para mejor definición */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <div class="col-12">
+                <header class="row">
+                    <!-- Top Nav -->
+                    <div class="col-12 bg-dark py-2 d-md-block d-none">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="images/logo.png" alt="Logo de la Pizzería" class="logo-small me-3">
+                            </div>
+                            <div class="col-auto me-auto">
+                                <ul class="top-nav">
+                                    <li><a href="index.html"><i class="fa fa-home me-2"></i>Inicio</a></li>
+                                    <li><a href="productos.html"><i class="fa fa-pizza-slice me-2"></i>Productos</a></li>
+                                    <li><a href="contactos.html"><i class="fa fa-address-book me-2"></i>Contactos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="col-12">
+                <main class="row">
+                    <div class="col-12 py-3">
+                        <video class="slider-img" autoplay muted loop>
+                            <source src="images/banner contacto.mp4" type="video/mp4">
+                        </video>
+                        <h2 class="text-center">¡Contactanos!</h2>
+                    </div>
+
+                    <div class="col-12 text-center py-3">
+                        <h4>¡Hacé tu pedido!</h4>
+                        <p>Llamanos o visitanos en nuestro local para disfrutar de la mejor pizza José C. Paz.</p>
+                    
+                        <h5>Redes Sociales</h5>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/buenaapizzaa/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        
+                        <h5>Teléfono</h5>
+                        <div class="social-icons">
+                            <i class="fab fa-whatsapp icono-whatsapp"></i>
+                            <a href="https://wa.me/5491124980688" class="text-decoration-none">11 6889-9925</a>
+                        </div>
+                        
+                        <h5>Dirección</h5>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Tres sargentos 2370, José C. Paz, Buenos Aires
+                        </p>
+                    
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <!-- Mapa de Google -->
+                                <div id="map">
+                                    <!-- Aquí insertamos el iframe del mapa de Google -->
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5865611425426!2d-58.41730558627088!3d-34.603713580456006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0e24d5c2b9%3A0xfecd1e11b5e580eb!2sAv.%20Las%20Heras%201234%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1613672012347!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 align-self-end">
+        <!-- Footer -->
+        <footer class="row">
+            <div class="col-12 bg-dark text-white pb-3 pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-sm-4 text-center mb-sm-0 mb-3">
+                        <div class="footer-logo"><a href="index.html">Desarrollo web</a></div>
+                        <address>DAIANA ACOSTA, AARON MUSERES, GABRIELA CAMPOS, CRIS CORREA</address>                      
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
